@@ -14,7 +14,7 @@ SeaSCAPE implements a two-stage ModelBuilder workflow that takes a single bathym
 Generates six terrain derivatives from the input bathymetry: slope, curvature, TPI (Topographic Position Index), roughness, resampled bathymetry, and Broad-Scale BPI (Bathymetric Position Index).
 
 **Stage 2 — Detection & Evaluation**
-Reclassifies the derivatives using Jenks Natural Breaks, applies a variable-threshold detection system that adjusts sensitivity by seabed complexity zone, converts detections to polygons, scores each on five confidence criteria, performs cluster analysis to characterise structural fragmentation, and assigns a four-class preservation classification:
+Reclassifies the derivatives using Jenks Natural Breaks, applies a variable-threshold detection system that adjusts sensitivity by seabed complexity zone, converts detections to polygons, scores each on five confidence criteria, determines the orientation of each detection, performs cluster analysis to characterise structural fragmentation, and assigns a four-class preservation classification:
 
 | Class | Label          | Score Range | Description |
 |-------|----------------|-------------|-------------|
@@ -37,13 +37,14 @@ Reclassifies the derivatives using Jenks Natural Breaks, applies a variable-thre
 3. Right-click **Toolboxes** → **Add Toolbox**
 4. Navigate to the downloaded folder and select `SeaSCAPE.atbx`
 
-The `.atbx` file references the Python scripts in the `scripts/` subfolder. Keep the folder structure intact — moving the scripts out of `scripts/` will break the tool references.
+Once opened as tools in ArcGIS, both workflow stages will provide additional information about each parameter and default settings. 
+
 
 ## Repository Structure
 
 ```
 SeaSCAPE/
-├── SeaSCAPE.atbx                      # ArcGIS Pro toolbox (add this to your project)
+├── SeaSCAPE.zip                       # ArcGIS Pro toolbox (unzip this and add the .abtx file to your project)
 ├── scripts/                           # Python script tools
 │   ├── CalculateBroadBPI.py           # Broad-Scale Bathymetric Position Index
 │   ├── CalculateTPI.py                # Topographic Position Index
@@ -65,7 +66,7 @@ SeaSCAPE/
 1. Add the toolbox to your ArcGIS Pro project
 2. Run **Stage 1 — Derivative Generation** with your bathymetric raster
 3. Run **Stage 2 — Detection & Evaluation** using the outputs from Stage 1
-4. The final output is a polygon feature class with confidence scores (`Confidence`) and preservation classifications (`Pres_Class`, `Pres_Index`)
+4. The final output is a polygon feature class with confidence scores (`Confidence`), orientation (`Bearing'), and preservation classifications (`Pres_Class`, `Pres_Index`)
 
 ### Custom Script Tools
 
@@ -98,7 +99,7 @@ Key defaults:
 
 If you use SeaSCAPE in your research, please cite:
 
-> Pols, C.T. (2026). SeaSCAPE: Seabed Shipwreck Classification Assessment and Preservation Evaluation [Software]. https://github.com/OWNER/SeaSCAPE
+> Pols, C.T. (2026). SeaSCAPE: Seabed Shipwreck Classification Assessment and Preservation Evaluation [Software]. https://github.com/ctpols/SeaSCAPE
 
 A `CITATION.cff` file is included for automated citation tools. GitHub displays a "Cite this repository" button on the repository page.
 
