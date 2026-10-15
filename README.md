@@ -1,6 +1,6 @@
-# SeaSCAPE
+<img width="1981" height="682" alt="SeaSCAPE_workflow" src="https://github.com/user-attachments/assets/4fd72d74-37d0-4df2-bdde-0d41a0b662ee" />
 
-**Seabed Shipwreck Classification Assessment and Preservation Evaluation**
+**SeaSCAPE Toolbox: Seabed Shipwreck Classification Assessment and Preservation Evaluation**
 
 An open-source ArcGIS Pro toolbox for the automated detection and structural preservation assessment of shipwreck sites from high-resolution bathymetric survey data.
 
