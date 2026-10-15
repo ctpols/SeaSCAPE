@@ -1,0 +1,43 @@
+# ArcGIS Pro lock files
+*.lock
+*.lk
+
+# ArcGIS Pro thumbnails and caches
+Thumbs.db
+.gdbindexes
+.gdbtable
+.gdbtablx
+.atx
+
+# File geodatabases (scratch/intermediate only — do not commit)
+*.gdb/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Intermediate rasters and scratch outputs
+scratch/
+temp/
