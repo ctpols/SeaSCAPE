@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "SeaSCAPE: Seabed Shipwreck Classification Assessment and Preservation Evaluation"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Pols
+    given-names: Cal T.
+    affiliation: "Department of Archaeology, University of Southampton"
+    orcid: "https://orcid.org/0009-0005-5807-0030"
+repository-code: "https://github.com/ctpols/SeaSCAPE"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-15"
+keywords:
+  - shipwreck detection
+  - maritime archaeology
+  - bathymetry
+  - preservation assessment
+  - ArcGIS Pro
+  - geospatial
+abstract: >-
+  SeaSCAPE (Seabed Shipwreck Classification Assessment and Preservation
+  Evaluation) is an open-source ArcGIS Pro toolbox for the automated
+  detection and structural preservation assessment of shipwreck sites
+  from high-resolution bathymetric survey data. It implements a
+  two-stage workflow: derivative generation from bathymetry, followed
+  by variable-threshold detection, cluster analysis, and a four-class
+  preservation classification scheme.
