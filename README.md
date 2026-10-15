@@ -66,7 +66,7 @@ SeaSCAPE/
 1. Add the toolbox to your ArcGIS Pro project
 2. Run **Stage 1 — Derivative Generation** with your bathymetric raster
 3. Run **Stage 2 — Detection & Evaluation** using the outputs from Stage 1
-4. The final output is a polygon feature class with confidence scores (`Confidence`), orientation (`Bearing'), and preservation classifications (`Pres_Class', `Pres_Index')
+4. The final output is a polygon feature class with confidence scores (`Confidence`), orientation (`Bearing`), and preservation classifications (`Pres_Class`, `Pres_Index`)
 
 ### Custom Script Tools
 
