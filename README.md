@@ -23,6 +23,11 @@ Reclassifies the derivatives using Jenks Natural Breaks, applies a variable-thre
 | 3     | Fragmented     | 2–4         | Many small clusters with no dominant structural core |
 | 4     | Indeterminate  | 1           | Below resolution gate — insufficient spatial information |
 
+
+## Outputs
+
+The toolbox produces classified detection polygons in two output feature classes: a full version retaining all attribute fields from the workflow, and a simplified version reduced to key output fields only (`Confidence`, `Degrees`, `BearingTxt`, `Pres_Class`, `Pres_Index`). `The Confidence` field can be used to filter and prioritise detections according to survey objectives. If the objective is to find and analyse extant wrecks, moderate to high confidence levels can be assessed first (e.g. ≥8). If smaller, possible wreck sites are being sought, then all detections can be retained for manual assessment.
+
 ## Requirements
 
 - **ArcGIS Pro** 3.x
@@ -101,7 +106,7 @@ If you use SeaSCAPE in your research, please cite:
 
 > Pols, C.T. (2026). SeaSCAPE: Seabed Shipwreck Classification Assessment and Preservation Evaluation [Software]. https://github.com/ctpols/SeaSCAPE
 
-A `CITATION.cff` file is included for automated citation tools. GitHub displays a "Cite this repository" button on the repository page.
+A `CITATION.cff` file is included for automated citation tools.
 
 ## Acknowledgements
 
