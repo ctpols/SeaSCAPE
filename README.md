@@ -26,7 +26,7 @@ Reclassifies the derivatives using Jenks Natural Breaks, applies a variable-thre
 
 ## Outputs
 
-The toolbox produces classified detection polygons in two output feature classes: a full version retaining all attribute fields from the workflow, and a simplified version reduced to key output fields only (`Confidence`, `Degrees`, `BearingTxt`, `Pres_Class`, `Pres_Index`). `The Confidence` field can be used to filter and prioritise detections according to survey objectives. If the objective is to find and analyse extant wrecks, moderate to high confidence levels can be assessed first (e.g. ≥8). If smaller, possible wreck sites are being sought, then all detections can be retained for manual assessment.
+The toolbox produces classified detection polygons in two output feature classes: a full version retaining all attribute fields from the workflow, and a simplified version reduced to key output fields only (`Confidence`, `Degrees`, `BearingTxt`, `Pres_Class`, `Pres_Index`). The `Confidence` field can be used to filter and prioritise detections according to survey objectives. If the objective is to find and analyse extant wrecks, moderate to high confidence levels can be assessed first (e.g. ≥8). If smaller, possible wreck sites are being sought, then all detections can be retained for manual assessment.
 
 ## Requirements
 
