@@ -105,7 +105,7 @@ A `CITATION.cff` file is included for automated citation tools. GitHub displays 
 
 ## Acknowledgements
 
-This research is funded by the **Leverhulme Trust** through the **Southampton Marine and Maritime Institute (SMMI)**, Intelligence Oceans programme, University of Southampton.
+This research is funded by the **Leverhulme Trust** through the **Southampton Marine and Maritime Institute (SMMI)**, Intelligent Oceans programme, University of Southampton.
 
 ## License
 
