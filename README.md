@@ -10,18 +10,22 @@ An open-source ArcGIS Pro toolbox for the automated detection and structural pre
 
 SeaSCAPE implements a two-stage ModelBuilder workflow that takes a single bathymetric raster and produces classified shipwreck detections with preservation scores:
 
-**Stage 1 — Derivative Generation**
+**Stage 1 - Derivative Generation**
 Generates six terrain derivatives from the input bathymetry: slope, curvature, TPI (Topographic Position Index), roughness, resampled bathymetry, and Broad-Scale BPI (Bathymetric Position Index).
 
-**Stage 2 — Detection & Evaluation**
+**Stage 2 - Detection & Evaluation**
 Reclassifies the derivatives using Jenks Natural Breaks, applies a variable-threshold detection system that adjusts sensitivity by seabed complexity zone, converts detections to polygons, scores each on five confidence criteria, determines the orientation of each detection, performs cluster analysis to characterise structural fragmentation, and assigns a four-class preservation classification:
 
 | Class | Label          | Score Range | Description |
 |-------|----------------|-------------|-------------|
-| 1     | Intact         | 8–10        | Structurally continuous wreck signal |
-| 2     | Broken         | 5–7         | Distinct sections separated but dominant structure remains |
-| 3     | Fragmented     | 2–4         | Many small clusters with no dominant structural core |
+| 1     | Intact         | 10–8        | Structurally continuous wreck signal |
+| 2     | Broken         | 7–5         | Distinct sections separated but dominant structure remains |
+| 3     | Fragmented     | 4–2         | Many small clusters with no dominant structural core |
 | 4     | Indeterminate  | 1           | Below resolution gate — insufficient spatial information |
+
+
+
+<img width="1254" height="1254" alt="preservation_scheme" src="https://github.com/user-attachments/assets/fc7023fa-ddcf-4ef8-bbb1-56da2180529c" />
 
 
 ## Outputs
@@ -30,7 +34,7 @@ The toolbox produces classified detection polygons in two output feature classes
 
 ## Requirements
 
-- **ArcGIS Pro** 3.x
+- **ArcGIS Pro** 3.7.0
 - **Extensions**: Spatial Analyst, 3D Analyst, Image Analyst
 - **Python packages**: `scipy` (for MST cluster analysis — included with ArcGIS Pro's conda environment)
 - **Input data**: Bathymetric raster in a projected coordinate system with metres in X, Y, and Z at 1 m resolution
