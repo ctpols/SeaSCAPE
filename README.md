@@ -104,6 +104,10 @@ Key defaults:
 - **BPI annulus**: Inner = 50 cells, Outer = 500 cells (at 5 m resampled resolution)
 - **TPI radius**: 30 cells (at 1 m resolution)
 
+## Tutorial
+
+A full tutorial of the toolbox can be found in the Releases section of this page. It contains a .pdf workflow with screenshots based on a provided sample bathymetric survey as well as the expected output detections using default settings. 
+
 ## Citation
 
 If you use SeaSCAPE in your research, please cite:
